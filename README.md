@@ -1,16 +1,23 @@
 # Proyecto: Movilidad urbana y productividad económica
 
-Descripción: 
--El American Development Bank busca identificar en qué ciudades invertir en infraestructura de transporte para elevar productividad y bienestar. Mi equipo entregará un reporte sobre la relación entre movilidad urbana (congestión, tiempos de viaje, retrasos) y productividad económica (PIB per cápita, desempleo) en principales ciudades mundiales.
+- Contexto: El American Development Bank busca identificar en qué ciudades invertir en infraestructura de transporte para elevar la productividad y el bienestar de su población. Mi equipo entregará un reporte sobre la relación entre movilidad urbana (congestión, tiempos de viaje y retrasos) y productividad económica (PIB per cápita y desempleo) en las principales ciudades del mundo.
+  
+- Dataset utilizado: Dos fuentes reales de datos:
 
-Análisis: 
--Las ciudades con que presentan cantidades más altas en population y que tienen un PIB alto también, muestran los tiempos de viaje más ineficientes, lo cual indica que merma la actividad económica de la ciudad. En las ciudades con mayor PIB, el traffic_index_live se muestra alto o sin mucha variación y viceversa: la actividad económica de cada ciudad está altamente ligada al tráfico. city_gdp_capita alto = jams_delay alto: la productividad trae consigo más saturación, y por lo tanto, mayor pérdida de tiempo.
+   > TomTom Traffic Index (tomtom_traffic.csv) — niveles de congestión, retrasos, longitud de embotellamientos y tiempos de viaje por ciudad.
+   > OECD Cities (oecd_city_economy.csv) — indicadores económicos anuales: PIB per cápita, desempleo, contaminación (PM2.5) y población por ciudad.
 
--Hay ciudades con un PIB alto y casi nada o nada de congestión. En forma inversa también, ciudades con congestión alta y bajo PIB. También, los datos arrojan sugerencias de que el tráfico quizá no sólo se deba al PIB, sino también a la eficiencia de la ciudad (infraestructura, transporte).
+-Herramientas:
+   > Python (pandas, numpy, seaborn, matplotlib) dentro de Jupyter Notebook.
 
-Conclusiones: 
--Bogotá es una ciudad altamente turística. La falta de un sistema de transporte subterráneo genera cuellos de botella que resultan en una pérdida masiva de horas productivas.
+-Insights principales: 
+   > Las ciudades con mayor población y PIB alto muestran los tiempos de viaje más ineficientes, lo que indica que la congestión merma directamente la actividad
+     económica. Se observa una relación clara: a mayor PIB per cápita, mayor traffic_index_live y mayor jams_delay, es decir, la productividad trae consigo más
+     saturación y, por tanto, mayor pérdida de tiempo.
+     Sin embargo, el tráfico no depende únicamente del PIB. Hay ciudades con alto PIB y poca o nula congestión, y otras con congestión elevada y bajo PIB, lo que
+     sugiere que la eficiencia urbana (infraestructura y sistema de transporte) es también un factor determinante.
 
--En esta ciudad también se presenta una saturación del espacio público por el comercio informal en zonas turísticas, lo que puede generar una experiencia abrumadora para el visitante. En lugar de fomentar el comercio, este entorno puede desincentivar el consumo, ya que el turista busca una experiencia fluida y cómoda. La inversión en infraestructura no solo mejoraría la movilidad, también mejoraría potencialmente la dinámica comercial de la ciudad.
-
+-Conclusión y recomendaciones:
+   > Bogotá es un caso representativo: siendo una ciudad altamente turística, la ausencia de un sistema de transporte subterráneo genera cuellos de botella que se      traducen en una pérdida masiva de horas productivas. A esto se suma la saturación del espacio público por comercio informal en zonas turísticas, lo que puede      generar una experiencia abrumadora para el visitante y, en lugar de fomentar el consumo, desincentivarlo.
+     La inversión en infraestructura de transporte en ciudades como Bogotá no solo mejoraría la movilidad, sino que potenciaría también la dinámica comercial y la      experiencia urbana en su conjunto.
 
